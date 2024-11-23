@@ -1,0 +1,13 @@
+import numpy as np
+from scipy import stats
+a=np.array([10, 15, 20, 20, 30, 40, 40, 40, 50])
+mode =stats.mode(a)
+mean =np.mean(a)
+median= np.median(a)
+print(mode, median, mean)
+
+print(f"mode:{mode.mode[0]},count:{mode.count[0]}")
+
+std=np.std(a)
+print(std)
+var=np.variance(data)
